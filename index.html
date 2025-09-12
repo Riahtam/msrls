@@ -1232,11 +1232,13 @@ GPFilter.addEventListener('change', () => {
                     submissionForm.reset();
                     $('#exampleModal').modal('hide');
                     $('#msg').text("Sucessfully Confirm");
+                    alert("Sucessfully Confirm Data");
                     location.reload();
                 } else {
                     $('#exampleModal').modal('hide');
                     $('#msg').css('color', 'red');  //with ID
                     $('#msg').text("Failed to Confirm  Data.");
+                    alert("Failed to Confirm Data");
                     
                 }
             } catch (error) {
@@ -1268,11 +1270,13 @@ GPFilter.addEventListener('change', () => {
                     EditForm.reset();
                     $('#UPDATEModal').modal('hide');
                     $('#msg').text("Sucessfully updated");
+                    alert("Sucessfully Updated Data");
                     location.reload();
                 } else {
                     $('#UPDATEModal').modal('hide');
                     $('#msg').css('color', 'red');  //with ID
                     $('#msg').text("Failed to Update Data.");
+                    alert("Failed to update Data");
                 }
             } catch (error) {
                 $('#UPDATEModal').modal('hide');
