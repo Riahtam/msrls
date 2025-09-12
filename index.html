@@ -1232,15 +1232,17 @@ GPFilter.addEventListener('change', () => {
                     submissionForm.reset();
                     $('#exampleModal').modal('hide');
                     $('#msg').text("Sucessfully Confirm");
-
+                    location.reload();
                 } else {
                     $('#exampleModal').modal('hide');
                     $('#msg').css('color', 'red');  //with ID
                     $('#msg').text("Failed to Confirm  Data.");
+                    
                 }
             } catch (error) {
                 $('#exampleModal').modal('hide');
                 $('#errormsg').text("Failed to Confirm  Data.");
+                location.reload();
             }
         });
 
@@ -1266,6 +1268,7 @@ GPFilter.addEventListener('change', () => {
                     EditForm.reset();
                     $('#UPDATEModal').modal('hide');
                     $('#msg').text("Sucessfully updated");
+                    location.reload();
                 } else {
                     $('#UPDATEModal').modal('hide');
                     $('#msg').css('color', 'red');  //with ID
@@ -1300,6 +1303,7 @@ GPFilter.addEventListener('change', () => {
                     UpdateINlokosForm.reset();
                     $('#exampleModal12').modal('hide');
                     $('#msg').text("Sucessfully updated");
+                    location.reload();
                 } else {
                     $('#UPDATEModal').modal('hide');
                     $('#msg').css('color', 'red');  //with ID
